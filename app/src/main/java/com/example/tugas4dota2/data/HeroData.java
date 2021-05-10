@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public final class HeroData {
 
-    public static ArrayList<HeroModel> generateAgent() {
+    public static ArrayList<HeroModel> generateHero() {
         ArrayList<HeroModel> hero = new ArrayList<>();
 
         hero.add(new HeroModel(

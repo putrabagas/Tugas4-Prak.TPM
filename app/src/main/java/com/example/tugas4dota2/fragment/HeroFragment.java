@@ -28,12 +28,12 @@ public class HeroFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         getActivity().setTitle("Hero Dota 2");
 
-        HeroAdapter heroAdapter = new HeroAdapter(HeroData.generateAgent(),getContext());
-        RecyclerView rvAgent = getView().findViewById(R.id.rv_hero_list);
+        HeroAdapter heroAdapter = new HeroAdapter(HeroData.generateHero(),getContext());
+        RecyclerView rvHero = getView().findViewById(R.id.rv_hero_list);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
 
-        rvAgent.setLayoutManager(layoutManager);
-        rvAgent.setHasFixedSize(true);
-        rvAgent.setAdapter(heroAdapter);
+        rvHero.setLayoutManager(layoutManager);
+        rvHero.setHasFixedSize(true);
+        rvHero.setAdapter(heroAdapter);
     }
 }
